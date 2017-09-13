@@ -1,0 +1,39 @@
+<ion-view title="Restaurants" style="background-color:#DAF5D1;">
+  <ion-header-bar class="topPage bar-positive">
+    <h2 class="headerTitle">Restaurants</h2>
+    <button class="button button-icon pull-right" ui-sref="mainmenu">
+    <i class="icon ion-home"></i>
+  </button>
+  </ion-header-bar>
+  <ion-content padding="true" class="has-header">
+    <!-- ////////// VIRTUAL SCROLL ////////////// -->
+    <ion-list>
+      <a href="https://www.yelp.com/biz/scalzotto-italian-restaurant-broomfield?adjust_creative=mJPrxgslII6EXOKlJSt1SA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=mJPrxgslII6EXOKlJSt1SA">
+        <ion-item class="listItems item-thumbnail-left positive">
+          <img src="https://s3-media2.fl.yelpcdn.com/bphoto/5z_77vuyOgKZLps-GDpZtQ/o.jpg">
+          <h2positive>Scalzotto Italian Restaurant
+            <p style="white-space:normal;">(303) 465-6196</p>
+          </h2positive>
+        </ion-item>
+      </a>
+      <ion-item class="listItems item-thumbnail-left positive">
+        <img src="https://s3-media2.fl.yelpcdn.com/bphoto/Yc_SeezSANZeDYa0G3wNUw/o.jpg">
+        <h2positive>GQue BBQ
+          <p>(303) 379-9205</p>
+        </h2positive>
+      </ion-item>
+      <!-- <a href={{data.url}}>
+      <ion-item class="item-thumbnail-left">
+        <img src="{{data.image_url}}">
+        <h2>{{data.name}} {{data.display_phone}}</h2>
+      </ion-item></a> -->
+
+      <!-- <a href={{data.url}}>
+      <ion-item class="item-thumbnail-left">
+        <img src="{{data.image_url}}">
+        <h2>{{data.name}} {{data.display_phone}}</h2>
+      </ion-item></a> -->
+
+    </ion-list>
+  </ion-content>
+</ion-view>
