@@ -29,6 +29,12 @@
       }).state('coupons', {
         url: '/coupons',
         component: 'coupons'
+      }).state('advice', {
+        url: '/advice',
+        component: 'advice'
+      }).state('profileform', {
+        url: '/profileform',
+        component: 'profileform'
       })
 
     $urlServiceProvider.rules.otherwise({

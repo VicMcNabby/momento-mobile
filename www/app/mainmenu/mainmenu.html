@@ -1,5 +1,5 @@
 <ion-view class="mainMenuBody" title="Main Menu">
-  <ion-header-bar class="topPage">
+  <ion-header-bar class="mainHeader">
     <h2 class="headerTitle">Main Menu</h2>
     <button class="button button-icon pull-right" ui-sref="profile">
     <i class="profileIcon icon ion-person"></i>
@@ -7,11 +7,10 @@
   </ion-header-bar>
   <ion-content padding="true" class="has-header">
     <div>
-      <img class="mainLogo" src="https://s3.amazonaws.com/ionic-io-static/ddP9KgETYmecxP8Y90nt_brownM copy.png">
-    </div>
-    <button class="mainMenuButton button button-block">Moms</button>
-    <button class="mainMenuButton button button-block" ui-sref="activities">Activities</button>
-    <button class="mainMenuButton button button-block" ui-sref="coupons">Coupons</button>
-    <button class="mainMenuButton button button-block">Advice</button>
+      <img class="mainLogo" ui-sref="login" src="https://s3.amazonaws.com/ionic-io-static/sMz53voRdusCTFPtTTjG_newM.png" />
+      <button class="mainMenuButton button button-block" ui-sref="profile">Moms</button>
+      <button class="mainMenuButton button button-block" ui-sref="activities">Activities</button>
+      <button class="mainMenuButton button button-block" ui-sref="coupons">Coupons</button>
+      <button class="mainMenuButton button button-block" ui-sref="advice">Advice</button>
   </ion-content>
 </ion-view>

@@ -4,7 +4,7 @@
     .module('momento')
     .component('restaurants', {
       controller: 'RestaurantsController',
-      templateUrl: 'app/activities/restaurants/restaurants.html'
+      templateUrl: 'app/mainmenu/activities/restaurants/restaurants.html'
     })
 
 }());

@@ -1,5 +1,50 @@
+.loginBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://freedesignfile.com/upload/2016/03/Light-color-modern-vector-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mainMenuBody {
-  background-color: #DAF5D1;
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("https://wallpapercave.com/wp/xcFelMz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.activitiesMenuBody {
+  background: linear-gradient(white, #a7cfe5, #174660);
+  background-image: url("http://buysellgraphic.com/images/graphic_preview/large/defocus_green_abstract_background_24166.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signupBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://bangaloreuniversity.ac.in/wp-content/uploads/2014/09/light-green-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adviceBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://pic.sc.chinaz.com/files/pic/pic9/201210/xpic7724.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profileBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://allswalls.com/images/abstract-art-colorful-colors-design-illustration-light-theme-wallpaper-19.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profileformBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://pic.sc.chinaz.com/files/pic/pic9/201210/xpic7724.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .splashLogo {
@@ -23,19 +68,76 @@
   margin-right: auto;
 }
 
+.adviceLogo {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+
 .mainMenuButton {
-  background: #2d8432;
+  background: #174660;
   color: white;
+  font-weight: bold;
   box-shadow: 1px 1px 3px black;
+  border-radius: 10px;
 }
 
 .activitiesMenuButton {
   color: white;
   box-shadow: 1px 1px 3px black;
+  background: #174660;
+  border-radius: 10px;
 }
 
-.logButtons {
+.loginButton {
   box-shadow: 1px 1px 3px grey;
+  background: #4c78aa;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.signUpButton {
+  box-shadow: 1px 1px 3px grey;
+  background: #4c78aa;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.adviceSubmitButton {
+  margin: 0 10px 0 10px;
+  box-shadow: 1px 1px 3px black;
+  background: #5add52;
+  color: black;
+  font-weight: bold;
+}
+
+.adviceClearButton {
+  margin: 0 10px 0 10px;
+  box-shadow: 1px 1px 3px black;
+  background: #174660;
+  font-weight: bold;
+  color: white;
+}
+
+.allPostsButton {
+  box-shadow: 1px 1px 3px black;
+  background: #045491;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+.profileSubmitButton {
+  box-shadow: 1px 1px 3px black;
+  background: #5add52;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
 }
 
 .menuHeader {
@@ -96,4 +198,33 @@
 
 .profile-button {
   box-shadow: 1px 1px 3px black;
+}
+
+.activitiesHeader {
+  background: #174660;
+}
+
+.mainHeader {
+  background: #64db5c;
+}
+
+.loginHeader {
+  background: #4c78aa;
+}
+
+.icon {
+  color: white;
+}
+
+.adviceInputBox {
+  border-bottom: 2px navy solid;
+  border-right: 2px navy solid;
+  box-shadow: 1px 1px 4px navy;
+}
+
+.profileForm {
+  margin-bottom: 10px;
+  border-bottom: 1px navy solid;
+  border-right: 1px navy solid;
+  box-shadow: 1px 1px 4px navy;
 }
