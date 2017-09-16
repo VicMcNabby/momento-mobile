@@ -1,0 +1,21 @@
+<ion-view title="Page" class="postsBody">
+  <ion-header-bar class="activitiesHeader">
+    <button class="button button-icon pull-right" ui-sref="mainmenu">
+    <i class="icon ion-home"></i>
+  </button>
+  </ion-header-bar>
+  <ion-content padding="true" class="has-header">
+    <div>
+      <img src="https://s3.amazonaws.com/ionic-io-static/irE8uj5ETlGmpRsj3CeR_posts.png" style="display: block; width: 80%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <ion-list ng-repeat="post in $ctrl.posts">
+      <ion-item class="allPosts" ng-class="{hide: post.hide}" ng-click="$ctrl.getID(post)">{{post.post}}</ion-item>
+
+    </ion-list>
+    <ion-list ng-class="{show: post.show}" ng-repeat="comment in $ctrl.comments">
+      <p>{{comment.comment}}</p>
+      <label>Comment: </label>
+      <input type="text" />
+    </ion-list>
+  </ion-content>
+</ion-view>

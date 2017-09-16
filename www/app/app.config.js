@@ -35,6 +35,9 @@
       }).state('profileform', {
         url: '/profileform',
         component: 'profileform'
+      }).state('posts', {
+        url: '/posts',
+        component: 'posts'
       })
 
     $urlServiceProvider.rules.otherwise({

@@ -1,30 +1,28 @@
 <ion-view title="Profile" class="profileBody">
-  <ion-header-bar class="topPage bar-positive">
-    <h2 class="headerTitle">Profile Page</h2>
+  <ion-header-bar class="profileHeader">
+    <h2 class="headerTitle">Moms</h2>
     <button class="button button-icon pull-right" ui-sref="mainmenu">
     <i class="icon ion-home"></i>
   </button>
   </ion-header-bar>
   <ion-content padding="true" class="has-header">
+    <div class="profileMoms" ng-repeat="mom in $ctrl.moms">
 
-    <img class="profile-image" src="https://s3.amazonaws.com/ionic-io-static/HMXTRyF4St6BZU03n7Dc_Matthew Victor copy.jpg">
-
-    <h1 class="profileName">Matthew <i class="icon ion-edit" ui-sref="profileform"></i></h1>
-    <h4 class="profileCategory">Interests:</h4>
-    <div class="show-list-numbers-and-dots">
-      <p>Hiking, dogs, watching movies, playing video games</p>
-    </div>
-    <h4 class="profileCategory">Children:</h4>
-    <p>
-      Chase
-    </p>
-    <h5 class="profileCategory">Ages:</h5>
-    <p>
-      1 yr old
-    </p>
-    <div class="profileButtons">
-      <button class="profile-button button button-balanced">Say Hi</button>
-      <button class="profile-button button button-assertive">Not now</button>
+      <!-- <img class="profile-image" src="https://s3.amazonaws.com/ionic-io-static/HMXTRyF4St6BZU03n7Dc_Matthew Victor copy.jpg"> -->
+      <img class="profile-image" src={{mom.image}}>
+      <h1 class="profileName" ng-click="$ctrl.getID(mom)">{{mom.name}}</h1>
+      <h4 class="profileLocation">{{mom.location}}</h4>
+      <h3 class="profileCategory">Interests:</h3>
+      <div class="show-list-numbers-and-dots">
+        <h4 class="profileText">{{mom.interests}}</h4>
+      </div>
+      <h3 class="profileCategory">Children:</h3>
+      <h4 class="profileText">
+        {{mom.children}}
+      </h4>
+      <div class="profileButtons">
+        <button class="profile-button-yes button button-block">Say Hi</button>
+      </div>
     </div>
   </ion-content>
 </ion-view>

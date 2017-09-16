@@ -47,6 +47,27 @@
   background-size: cover;
 }
 
+.restaurantsBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://pic.sc.chinaz.com/files/pic/pic9/201210/xpic7724.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.couponsBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://bangaloreuniversity.ac.in/wp-content/uploads/2014/09/light-green-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.postsBody {
+  background: linear-gradient(white, #c1f2cc, #1c5629);
+  background-image: url("http://images.all-free-download.com/images/graphiclarge/defocus_green_abstract_background_6817039.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .splashLogo {
   width: 100%;
   height: 100%;
@@ -82,6 +103,10 @@
   font-weight: bold;
   box-shadow: 1px 1px 3px black;
   border-radius: 10px;
+  border-bottom: 3px double white;
+  border-left: 3px double white;
+  border-top: 3px double #64db5c;
+  border-right: 3px double #64db5c;
 }
 
 .activitiesMenuButton {
@@ -89,6 +114,10 @@
   box-shadow: 1px 1px 3px black;
   background: #174660;
   border-radius: 10px;
+  border-bottom: 3px double white;
+  border-left: 3px double white;
+  border-top: 3px double #64db5c;
+  border-right: 3px double #64db5c;
 }
 
 .loginButton {
@@ -129,7 +158,10 @@
   color: white;
   font-weight: 600;
   border-radius: 10px;
-  border: 2px white solid;
+  border-bottom: 3px double white;
+  border-left: 3px double white;
+  border-top: 3px double #64db5c;
+  border-right: 3px double #64db5c;
 }
 
 .profileSubmitButton {
@@ -143,6 +175,10 @@
 .menuHeader {
   text-align: center;
   color: #2d8432
+}
+
+.profileHeader {
+  background: #174660;
 }
 
 .listItems {
@@ -166,23 +202,33 @@
 }
 
 .profileName {
-  color: blue;
+  color: #174660;
+  text-align: center;
+}
+
+.profileLocation {
   text-align: center;
 }
 
 .profileCategory {
-  color: blue;
+  color: #174660;
+}
+
+.profileText {
+  font-weight: bold;
 }
 
 .profile-image {
   display: block;
-  width: 90%;
-  height: 40%;
+  width: 80%;
+  height: 50%;
   height: auto;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
   border: 4px double blue;
+  box-shadow: 2px 2px 6px black;
 }
 
 .momentoInput {
@@ -193,11 +239,26 @@
 .profileButtons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.profile-button {
+.profile-button-yes {
   box-shadow: 1px 1px 3px black;
+  background: #64db5c;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  border-radius: 15px;
+  max-width: 70%;
+  border-bottom: 3px double #174660;
+  border-right: 3px double #174660;
+}
+
+.profile-button-no {
+  box-shadow: 1px 1px 3px black;
+  background: #174660;
+  font-weight: bold;
+  color: white;
 }
 
 .activitiesHeader {
@@ -205,26 +266,61 @@
 }
 
 .mainHeader {
-  background: #64db5c;
+  background: #174660;
+  border-bottom: 3px solid #64db5c;
 }
 
 .loginHeader {
   background: #4c78aa;
 }
 
+.couponsHeader {
+  background: #277f18;
+}
+
 .icon {
   color: white;
+}
+
+.editProfileIcon {
+  color: navy;
 }
 
 .adviceInputBox {
   border-bottom: 2px navy solid;
   border-right: 2px navy solid;
   box-shadow: 1px 1px 4px navy;
+  border-radius: 15px !important;
 }
 
 .profileForm {
   margin-bottom: 10px;
+  border-radius: 4px;
   border-bottom: 1px navy solid;
   border-right: 1px navy solid;
   box-shadow: 1px 1px 4px navy;
+}
+
+.imageInput {
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px navy;
+}
+
+.profileMoms {
+  min-height: 100vh;
+  border-bottom: 5px solid navy;
+}
+
+.hide {
+  display: none;
+}
+
+.allPosts {
+  border-radius: 6px;
+  border: 1px solid #174660;
+  box-shadow: 1px 1px 4px #174660;
+  margin: 3px 0 3px 0;
+  font-weight: bold;
+  background: linear-gradient(to left, #c8f4ee, white);
 }

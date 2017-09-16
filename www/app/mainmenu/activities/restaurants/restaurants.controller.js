@@ -3,7 +3,10 @@
     .module('momento')
     .controller('RestaurantsController', RestaurantsController)
 
-  function RestaurantsController() {
+  function RestaurantsController($http) {
     const vm = this
+
+
+
   }
 }());
