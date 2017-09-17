@@ -4,7 +4,7 @@
     .module('momento')
     .config(config)
 
-  function config($stateProvider, $locationProvider, $urlServiceProvider) {
+  function config($stateProvider, $locationProvider, $urlServiceProvider, $httpProvider) {
     $locationProvider.html5Mode(true)
 
     $stateProvider
@@ -39,6 +39,12 @@
         url: '/posts',
         component: 'posts'
       })
+
+    $httpProvider.defaults.headers.common = {};
+    $httpProvider.defaults.headers.post = {};
+    $httpProvider.defaults.headers.put = {};
+    $httpProvider.defaults.headers.patch = {};
+    $httpProvider.defaults.headers.get = {};
 
     $urlServiceProvider.rules.otherwise({
       state: 'mainmenu'

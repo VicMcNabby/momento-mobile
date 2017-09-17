@@ -1,5 +1,5 @@
 (function() {
-  angular.module('momento', ["ui.router", "ionic"])
+  angular.module('momento', ["ui.router", "ionic", "ngCordova"])
 
     .run(function($ionicPlatform) {
       $ionicPlatform.ready(function() {
