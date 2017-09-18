@@ -9,13 +9,18 @@
       <img src="https://s3.amazonaws.com/ionic-io-static/irE8uj5ETlGmpRsj3CeR_posts.png" style="display: block; width: 80%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
     <ion-list ng-repeat="post in $ctrl.posts">
-      <ion-item class="allPosts" ng-class="{hide: post.hide}" ng-click="$ctrl.getID(post)">{{post.post}}</ion-item>
 
+      <ion-item class="allPosts">{{post.post}}</ion-item>
+      <button class="seeCommentsButton" ng-click="showComments=!showComments; $ctrl.getID(post)">Comments <i class="ion-arrow-down-b"></i></button>
+      <div class="commentInfoBox" ng-show="showComments">
+        <p ng-repeat="comment in $ctrl.comments" class="commentDisplay"><i class="ion-star"></i> {{comment.comment}}</p>
+        <div class="commentInputBox">
+
+          <input ng-model="$ctrl.newComment.comment" type="text" class="postAnswers" placeholder=" enter own answer" />
+          <button ng-click="$ctrl.postComment(post)" class="commentSubmitButton button">Submit</button>
+        </div>
+      </div>
     </ion-list>
-    <ion-list ng-class="{show: post.show}" ng-repeat="comment in $ctrl.comments">
-      <p>{{comment.comment}}</p>
-      <label>Comment: </label>
-      <input type="text" />
-    </ion-list>
+
   </ion-content>
 </ion-view>

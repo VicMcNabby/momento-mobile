@@ -3,25 +3,39 @@
     .module('momento')
     .controller('SignUpController', SignUpController)
 
-  function SignUpController($cordovaGeolocation) {
+  function SignUpController($cordovaGeolocation, $http, $ionicLoading) {
     const vm = this
 
     vm.getLocation = function() {
-      var posOptions = {
+      $ionicLoading.show({
+        template: "Loading...",
+        noBackdrop: true
+      });
+      const posOptions = {
         timeout: 10000,
         enableHighAccuracy: false
       };
       $cordovaGeolocation
         .getCurrentPosition(posOptions)
         .then(function(position) {
-          console.log(position);
-          var lat = position.coords.latitude
-          var long = position.coords.longitude
+          const lat = position.coords.latitude
+          const long = position.coords.longitude
+          // change migration to accept lat and long
+          const localAPI = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=AIzaSyDIWoS_XxOXXfilJdu1gwuD3c6P4nOd-0Y`
+          $http.get(localAPI)
+            .then(result => {
+              console.log(result);
+            })
+          console.log("lat: ", lat);
+          console.log("long: ", long);
+          $ionicLoading.hide()
         }, function(err) {
           // error
           console.log(err);
+          $ionicLoading.hide()
         });
-
+      ////////////// Relocate //////////////
     }
+
   }
 }());

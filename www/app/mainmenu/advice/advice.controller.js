@@ -3,18 +3,24 @@
     .module('momento')
     .controller('AdviceController', AdviceController)
 
+
   function AdviceController($http) {
     const vm = this
 
     const postURL = 'http://localhost:3000/api/v1/posts'
 
     vm.addPost = function() {
-      let post = {
+
+      let info = {
         "post": vm.newPost.post
       }
 
-      $http.post(postURL, post)
-        .then(result => {})
+      console.log(info);
+
+      $http.post(postURL, info)
+        .then(result => {
+          console.log('posted');
+        })
 
       vm.newPost = {
         post: ''

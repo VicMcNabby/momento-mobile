@@ -312,8 +312,11 @@
   border-bottom: 5px solid navy;
 }
 
-.hide {
-  display: none;
+.seeCommentsButton {
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px black;
+  background: #cdf2c9;
+  margin-bottom: 10px;
 }
 
 .allPosts {
@@ -322,5 +325,43 @@
   box-shadow: 1px 1px 4px #174660;
   margin: 3px 0 3px 0;
   font-weight: bold;
+  word-wrap: break-word;
+  height: 80px;
+  width: 95%;
+  white-space: initial;
   background: linear-gradient(to left, #c8f4ee, white);
+}
+
+.commentInputBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.commentInfoBox {
+  background: #cdf2c9;
+  padding: 10px 0 10px 5px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 14px black;
+}
+
+input.postAnswers {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.commentDisplay {
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.commentSubmitButton {
+  box-shadow: 1px 1px 3px black;
+  background: #9dd7e8;
+  color: black;
+  font-weight: bold;
+  margin: 0 5px 5px 0;
 }

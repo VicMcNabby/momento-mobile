@@ -30,6 +30,7 @@
         "cordova-plugin-splashscreen": "~4.0.1",
         "cordova-plugin-statusbar": "2.2.1",
         "cordova-plugin-whitelist": "1.3.1",
+        "cordova-plugin-x-toast": "git+https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
         "cordova-sms-plugin": "git+https://github.com/cordova-sms/cordova-sms-plugin.git",
         "ionic-plugin-keyboard": "~2.2.1"
     },
@@ -46,7 +47,8 @@
             "ionic-plugin-keyboard": {},
             "cordova-plugin-geolocation": {},
             "cordova-plugin-camera": {},
-            "cordova-sms-plugin": {}
+            "cordova-sms-plugin": {},
+            "cordova-plugin-x-toast": {}
         }
     }
 }
