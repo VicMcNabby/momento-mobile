@@ -6,20 +6,15 @@
   function RestaurantsController($http) {
     const vm = this
 
-    const restaurantsUrl = "https://api.yelp.com/v3/businesses/search?location=80020&term=kids+menu"
+    const restaurantsUrl = "https://partner-api.groupon.com/deals.json?tsToken=US_AFF_0_201236_212556_0&query=kids+restaurants&locale=en_US&offset=0&limit=10"
 
-    var headers = {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "Authorization": "Bearer B2XcGqVxSNOqENXbqcuPn2yB7qmfdd1kROC9KmOaWHJH4GKUcU8nzebJk-8t5nfGJuKnQPYIUOrydv66NX4mcOZurNWk5WQ_jNNWibgokz0HN2_jS8MJexauYXe0WXYx"
+    vm.$onInit = function() {
+      $http.get(restaurantsUrl)
+        .then(result => {
+          console.log("result");
+          vm.restaurants = result.data.deals
+        })
+      vm.restaurants = []
     }
-
-    return $http({
-      method: "GET",
-      headers: headers,
-      url: restaurantsUrl
-    }).success(result => {
-      console.log(result);
-    })
-
   }
 }());

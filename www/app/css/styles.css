@@ -220,14 +220,14 @@
 
 .profile-image {
   display: block;
-  width: 80%;
+  width: 70%;
   height: 50%;
   height: auto;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%;
-  border: 4px double blue;
+  border-radius: 20%;
+  /*border: 4px double blue;*/
   box-shadow: 2px 2px 6px black;
 }
 
@@ -243,15 +243,13 @@
 }
 
 .profile-button-yes {
-  box-shadow: 1px 1px 3px black;
+  box-shadow: 2px 2px 6px black;
   background: #64db5c;
   font-size: 1.5em;
   color: black;
   font-weight: bold;
   border-radius: 15px;
   max-width: 70%;
-  border-bottom: 3px double #174660;
-  border-right: 3px double #174660;
 }
 
 .profile-button-no {
@@ -282,10 +280,6 @@
   color: white;
 }
 
-.editProfileIcon {
-  color: navy;
-}
-
 .adviceInputBox {
   border-bottom: 2px navy solid;
   border-right: 2px navy solid;
@@ -299,6 +293,8 @@
   border-bottom: 1px navy solid;
   border-right: 1px navy solid;
   box-shadow: 1px 1px 4px navy;
+  font-weight: bolder;
+  padding: 10px;
 }
 
 .imageInput {
@@ -364,4 +360,8 @@ input.postAnswers {
   color: black;
   font-weight: bold;
   margin: 0 5px 5px 0;
+}
+
+.editIcon {
+  color: navy;
 }

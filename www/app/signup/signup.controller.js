@@ -6,7 +6,7 @@
   function SignUpController($cordovaGeolocation, $http, $ionicLoading) {
     const vm = this
 
-    vm.getLocation = function() {
+    vm.signUp = function() {
       $ionicLoading.show({
         template: "Loading...",
         noBackdrop: true

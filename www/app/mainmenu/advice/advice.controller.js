@@ -17,7 +17,11 @@
 
       console.log(info);
 
-      $http.post(postURL, info)
+      $http.post(postURL, info, {
+          headers: {
+            "content-type": "application/json"
+          }
+        })
         .then(result => {
           console.log('posted');
         })

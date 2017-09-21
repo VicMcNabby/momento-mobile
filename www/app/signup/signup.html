@@ -1,27 +1,39 @@
 <ion-view title="Signup" class="signupBody">
   <ion-header-bar class="loginHeader">
-    <h2 class="headerTitle">Momo</h2>
+    <h2 class="headerTitle">Sign Up</h2>
   </ion-header-bar>
   <ion-content padding="true" class="has-header">
     <form class="list">
       <div>
-        <img src="https://s3.amazonaws.com/ionic-io-static/sMz53voRdusCTFPtTTjG_newM.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;">
+        <img src="https://s3.amazonaws.com/ionic-io-static/sMz53voRdusCTFPtTTjG_newM.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
       </div>
       <ion-list>
-        <label class="item item-input">
+        <label class="profileForm item item-input">
           <span class="input-label">Name:</span>
-          <input type="text" placeholder="">
+          <input ng-model="$ctrl.newMom.name" type="text" placeholder="">
         </label>
-        <label class="item item-input">
+        <label class="profileForm item item-input">
           <span class="input-label">Email:</span>
-          <input type="email" placeholder="">
+          <input ng-model="$ctrl.newMom.email" type="email" placeholder="">
         </label>
-        <label class="item item-input">
+        <label class="profileForm item item-input">
           <span class="input-label">Password:</span>
-          <input type="text" placeholder="">
+          <input ng-model="$ctrl.newMom.password" type="text" placeholder="">
+        </label>
+        <label class="profileForm item item-input">Interests:
+          <input ng-model="$ctrl.newMom.interests" type="text" placeholder="  hiking, going to the park, etc.">
+        </label>
+        <label class="profileForm item item-input">Children:
+          <input ng-model="$ctrl.newMom.children" type="text" placeholder="  Billy 1, Sally  3">
         </label>
       </ion-list>
-      <button ng-click="$ctrl.getLocation()" class="signUpButton button button-block">Sign up</button>
+      <!-- <form action="/action_page.php"> -->
+      <!-- <input type="file" name="pic" accept="image/*"> -->
+      <!-- <label>Image: </label>
+        <input class="imageInput" id="myFileInput" type="file" accept="image/*;capture=camera"> -->
+      <!-- <input type="submit"> -->
+      <!-- </form> -->
+      <button ng-click="$ctrl.signUp()" class="signUpButton button button-block">Sign up</button>
     </form>
   </ion-content>
 </ion-view>

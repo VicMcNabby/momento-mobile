@@ -38,13 +38,16 @@
       }).state('posts', {
         url: '/posts',
         component: 'posts'
+      }).state('myprofile', {
+        url: '/myprofile',
+        component: 'myprofile'
+      }).state('museums', {
+        url: '/museums',
+        component: 'museums'
+      }).state('parks', {
+        url: '/parks',
+        component: 'parks'
       })
-
-    $httpProvider.defaults.headers.common = {};
-    $httpProvider.defaults.headers.post = {};
-    $httpProvider.defaults.headers.put = {};
-    $httpProvider.defaults.headers.patch = {};
-    $httpProvider.defaults.headers.get = {};
 
     $urlServiceProvider.rules.otherwise({
       state: 'mainmenu'

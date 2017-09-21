@@ -21,10 +21,14 @@
 
       console.log("data: ", data);
 
-      $http.post(loginUrl, data)
+      $http.post(loginUrl, data, {
+          headers: {
+            "content-type": "application/json"
+          }
+        })
         .then(result => {
-          localStorage.token = result.token;
-          localStorage.user_id = result.id;
+          localStorage.token = result.data.token;
+          localStorage.user_id = result.data.id;
           console.log("it worked ", result);
           ///////////////////////////////////
           $ionicLoading.show({
@@ -32,7 +36,7 @@
             noBackdrop: true,
             duration: 2000
           });
-
+          window.location.href = '/';
         }).catch(err => {
           console.log('error ', err);
           ////////////////////////////////////////

@@ -21,12 +21,12 @@
 
     vm.getID = function(post) {
 
-      console.log('post id', post.id);
+      // console.log('post id', post.id);
       let postID = post.id
 
       $http.get(`${commentURL}/${postID}`)
         .then(result => {
-          console.log(result.data);
+          // console.log(result.data);
           vm.comments = result.data
         })
       vm.comments = []
@@ -35,21 +35,24 @@
     vm.postComment = function(post) {
 
       let data = {
-        comment: vm.newComment.comment,
-        posts_id: post.id
+        "comment": vm.newComment.comment,
+        "posts_id": post.id
       }
 
       vm.comments.push({
         comment: vm.newComment.comment
       })
       console.log(data);
-      $http.post(commentURL, data)
+      $http.post(commentURL, data, {
+          headers: {
+            "content-type": "application/json"
+          }
+        })
         .then(result => {
-          console.log(result);
+          console.log("sent");
         })
 
       // console.log(data, post.id);
-      console.log(data);
       vm.newComment = {
         comment: ''
       }

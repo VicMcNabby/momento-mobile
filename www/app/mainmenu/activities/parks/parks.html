@@ -1,0 +1,20 @@
+<ion-header-bar class="topPage bar-positive">
+  <h2 class="headerTitle">Parks</h2>
+  <button class="button button-icon pull-right" ui-sref="mainmenu">
+  <i class="icon ion-home"></i>
+</button>
+</ion-header-bar>
+<ion-content padding="true" class="has-header">
+  <ion-list ng-repeat="park in $ctrl.parks">
+    <a href={{park.dealUrl}}>
+      <ion-item class="item-thumbnail-left">
+        <img src={{park.mediumImageUrl}}>
+        <h2>{{park.announcementTitle}}</h2>
+        <p style="white-space:normal;">
+          {{park.title}}
+        </p>
+      </ion-item>
+    </a>
+  </ion-list>
+</ion-content>
+</ion-view>
